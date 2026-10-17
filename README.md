@@ -37,5 +37,15 @@ Actually surprisingly cheap, due to AliExpress being clutch.
 | PCB | 1 | JLCPCB | $4.00 | $4.00 | [JLCPCB](https://jlcpcb.com) |
 | Estimated total shipping | 1 |  |  | $4.77 |  |
 
-Oh and, the Misc AliExpress parts, are like resistors, switches, pin headers, the ina219 module, the stepper driver etc. Just didn't want to spend time writing them all out, as AliExpress changes the exact prices constantly. But the price is calculated from the AliExpress cart total of $48.46 minus the other parts listed separately - had a screenshot somewhere, but seem to have misplaced it
+Oh and, the Misc AliExpress parts, are like resistors, switches, pin headers, the ina219 module, the stepper driver etc. Just didn't want to spend time writing them all out, as AliExpress changes the exact prices constantly. But the price is calculated from the AliExpress cart total of $48.46 minus the other parts listed separately.
 
+Though will list briefly here with rough prices without links as quicker - and if parts are looked up on AliExpress, you're unlikely to find better prices:
+- seeed esp32c6 $9
+- 200pcs capacitor kit 7$
+- 230pcs jst connector kit $3
+- kapton tape $2.50
+- 20pcs switch $1.50
+- push button $2
+- NEMA 17 pancake $6 
+- 10x40 pin headers kit $2
+- 
