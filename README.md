@@ -28,7 +28,7 @@ Again, a relatively simple PCB, without that many connections.
 
 ## Code
 
-Will code later in the build week, as can't code without the microcontroller and parts - at least without going massively wrong.
+Already is a skeleton code definition, but will finish code later in the build week, as can't code without the microcontroller and parts - at least without going massively wrong.
 
 ## BOM
 Actually surprisingly cheap, due to AliExpress being clutch.
