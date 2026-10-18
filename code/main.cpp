@@ -18,3 +18,15 @@ const uint8_t PIN_SCL = D7;
 // Power / input
 const uint8_t PIN_VBAT   = D0;
 const uint8_t PIN_BUTTON = D9;
+
+
+void setup() {
+    pinMode(PIN_STEP, OUTPUT);
+    pinMode(PIN_DIR, OUTPUT);
+    pinMode(PIN_EN, OUTPUT);
+    // Setup serial, I2C, etc. later
+}
+   
+void loop() {
+    // Main logic will go here in build week
+}
