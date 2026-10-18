@@ -48,4 +48,11 @@ Though will list briefly here with rough prices without links as quicker - and i
 - push button $2
 - NEMA 17 pancake $6 
 - 10x40 pin headers kit $2
-- 
+- 10pcs bmp280 temp sensor $4
+- 820pcs resistor kit $8
+- tmc2209 clone $5
+- 5pcs buck to 5v $3
+- INA219 module $2
+- 2s battery holder $2.50
+
+They add up to more here, but will be less due do AliExpress coupons etc.
