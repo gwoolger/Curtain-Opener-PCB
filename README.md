@@ -60,3 +60,8 @@ Though will list briefly here with rough prices without links as quicker - and i
 - 2s battery holder $2.50
 
 They add up to more here, but will be less due do AliExpress coupons etc.
+
+### BOM description
+Added as in slack seems people are getting returned for:
+
+stepper and tmc2209 driver for physically moving the thing, esp32c6 for controlling. capacitors used to supplement stepper. 2s batt holder used with cells I'm buying seperately - too expensive to fit in budget (and using a BMS I've already got). buck module for right voltage for MCU, pin headers so I can put things on and off easier. other modules like current and temp etc for monitoring. other stuff just misc to make everything work. nothing else really adds function.
