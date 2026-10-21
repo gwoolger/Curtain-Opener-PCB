@@ -6,11 +6,7 @@ The housing and CAD files can be found on [gwoolger/Curtain-Opener-3D](gitHub.co
 
 ## For Reviewer
 
-Tier note: BOM now itemizes to $98.65, above the Tier 2 cap of $65. Requesting a return for changes so I can re-select this as Tier 3 ($100 cap). I can't change the tier after submission as unsubmitting would block resubmission and funding, so a return is the only path. 
-
-If hours are an issue, I have spent the last 3 hours trying to find good deals on AliExpress.
-
-Can look back at past git commits if curious.
+I was looking back at things, and realised I had the wrong shipping location selected. So when I added things up again, the parts got to just under $100. What should I do? as I'm currently stuck on tier 2, and the website won't let me change it?
 
 ## Repo Info
 Contains the PCB design files and documentation for the creation of a PCB to control a stepper motor which is designed to open curtains with a pull cord.
