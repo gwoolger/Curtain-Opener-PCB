@@ -4,6 +4,12 @@ This is a project to create a simple PCB to link a microcontroller to various pe
 
 The housing and CAD files can be found on [gwoolger/Curtain-Opener-3D](gitHub.com/gwoolger/Curtain-Opener-3D)
 
+## For Reviewer
+
+Possibly return for changes so I can change it to tier three, as I made the original BOM without realising AliExpress does Choice items based on shipping, and when I put my actual location, it gets much more expensive.
+
+Can look back at past git commits if curious.
+
 ## Repo Info
 Contains the PCB design files and documentation for the creation of a PCB to control a stepper motor which is designed to open curtains with a pull cord.
 
