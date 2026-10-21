@@ -8,6 +8,8 @@ The housing and CAD files can be found on [gwoolger/Curtain-Opener-3D](gitHub.co
 
 Will need a return/needs changes, as the BOM is over the tier 2 budget. But fits within the tier 3 one.
 
+Couldn't change on website, as that would require an unsubmit, and then I wouldn't be able to resubmit or get any funding.
+
 > Possibly return for changes so I can change it to tier three, as I made the original BOM without realising AliExpress does Choice items based on shipping, and when I put my actual location, it gets much more expensive.
 
 Can look back at past git commits if curious.
