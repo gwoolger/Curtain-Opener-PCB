@@ -6,11 +6,9 @@ The housing and CAD files can be found on [gwoolger/Curtain-Opener-3D](gitHub.co
 
 ## For Reviewer
 
-Will need a return/needs changes, as the BOM is over the tier 2 budget. But fits within the tier 3 one.
+Tier note: BOM now itemizes to $98.65, above the Tier 2 cap of $65. Requesting a return for changes so I can re-select this as Tier 3 ($100 cap). I can't change the tier after submission as unsubmitting would block resubmission and funding, so a return is the only path. 
 
-Couldn't change on website, as that would require an unsubmit, and then I wouldn't be able to resubmit or get any funding.
-
-> Possibly return for changes so I can change it to tier three, as I made the original BOM without realising AliExpress does Choice items based on shipping, and when I put my actual location, it gets much more expensive.
+If hours are an issue, I have spent the last 3 hours trying to find good deals on AliExpress.
 
 Can look back at past git commits if curious.
 
@@ -68,6 +66,8 @@ Actually surprisingly cheap, due to AliExpress being clutch.
 They add up to more here, but will be less due do AliExpress coupons etc.
 
 But still under the $100 cap for tier 3.
+
+Oh, and AliExpress shipping is included in the price, as they are Choice items, so shipping is just for JLCPCB.
 
 ### BOM description
 Added as in slack seems people are getting returned for:
