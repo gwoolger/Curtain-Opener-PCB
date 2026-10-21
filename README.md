@@ -10,6 +10,8 @@ I was looking back at things, and realised I had the wrong shipping location sel
 
 The half life website says I'm at 24.1 hours, so should have enough for tier 3? it was 24 hours at one point, but can't remember if it changed.
 
+So I guess I'm wondering if it can be sent back for changes, so I can update it?
+
 ## Repo Info
 Contains the PCB design files and documentation for the creation of a PCB to control a stepper motor which is designed to open curtains with a pull cord.
 
