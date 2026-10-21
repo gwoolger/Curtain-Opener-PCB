@@ -8,7 +8,7 @@ The housing and CAD files can be found on [gwoolger/Curtain-Opener-3D](gitHub.co
 
 I was looking back at things, and realised I had the wrong shipping location selected. So when I added things up again, the parts got to just under $100. What should I do? as I'm currently stuck on tier 2, and the website won't let me change it?
 
-The half life website says I'm at 24.1 hours, so should have enough for tier 3? it was 24 hours at one point, but can't remember if it changed.
+The half life website says I'm at 24.1 hours, so should have enough for tier 3.
 
 So I guess I'm wondering if it can be sent back for changes, so I can update it?
 
