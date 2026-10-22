@@ -16,7 +16,7 @@ const uint8_t PIN_SDA = D6;
 const uint8_t PIN_SCL = D7;
 
 // Power / input
-const uint8_t PIN_VBAT   = D0;
+//const uint8_t PIN_VBAT   = D0; not this one, as would fry esp if connected
 const uint8_t PIN_BUTTON = D9;
 
 
