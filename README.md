@@ -2,7 +2,7 @@
 
 This is a project to create a simple PCB to link a microcontroller to various peripherals to automatically open and close a curtain.
 
-The housing and CAD files can be found on [gwoolger/Curtain-Opener-3D](gitHub.com/gwoolger/Curtain-Opener-3D)
+The housing and CAD files can be found on [gwoolger/Curtain-Opener-3D](github.com/gwoolger/Curtain-Opener-3D)
 
 ## For Reviewer
 
