@@ -126,6 +126,14 @@ Now I've got the fun task of learning how to wire up the board. I've started a b
 
 But I've gotta say, it does look pretty sick, even though it isn't wired up yet.
 
+## PCB design
+
+Before I actually layed out the PCB, I had a go at thinking how I could lay it out etc.
+
+![image](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/b4f7d86eb65a15d36bdf15f91100debc3738c215f98d23cf98d666167ffa54f9.png)
+
+And in the end, I decided to go with a rectangular shape (as seen in the image and the pcb layout above), that will fit cleanly in the case.
+
 [Timelapse](https://lookout.hackclub.com/api/media/50238e16-1651-495c-84c4-61cd08e26beb/video.mp4)
 
 ### 2026-10-11: # Routing PCB
