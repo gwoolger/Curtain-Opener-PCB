@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 1 | Tier 3 | 19.65h | 7 |
+| Week 1 | Tier 3 | 19.75h | 7 |
 
 ## Contents
 
@@ -44,12 +44,16 @@ But as my curtains have a pull cord, I decided that it would be easier to make s
 
 ### 2026-10-07: # Researching Parts
 
-**1.8h**
+**1.9h**
 
 # Researching Parts
 
 Decided to go with the ESP32 C3 Supermini for the small size. Spent the session further researching other components. Thinking of including a battery system, so will still need to find the relevant parts.
 ![esp32_c3_supermini_pinout](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/f7663484421160ac8a420998d4d89656de183f53da9ed137be386a4f389ee9ac.webp)
+
+Also worked on starting the documentation. And did some research on my phone, as the pc was slowing down (its really old). the lapse is of some of the pc stuff.
+
+![image](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/e2f5826d17e9ddda5be56f91f548da3e8672d75bdc82ffcd0ca3c379818dc528.png)
 
 [Timelapse](https://lookout.hackclub.com/api/media/bd21c64c-eba3-48e0-b2f2-50be5e0c7350/video.mp4)
 
