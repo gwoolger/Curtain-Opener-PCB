@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 1 | Tier 3 | 19.05h | 7 |
+| Week 1 | Tier 3 | 19.65h | 7 |
 
 ## Contents
 
@@ -26,14 +26,21 @@
 
 ### 2026-10-07: # Started the Project
 
-**1h**
+**1.6h**
 
 # Started the Project
 
 Got initial idea to try and open a curtain. So started researching parts to use and how to make a PCB.
-![Curtain Cord](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/b9e76ac33a13bcc3d189d1a359a76fe1a99bebb0fcd8e8a03cf97bfac29af19e.png)
 
-[Timelapse](https://lookout.hackclub.com/api/media/b269b576-c734-4dc0-9746-84249d8b20e8/video.mp4)
+Also looked at other designs to see if this was feasible. Looked at different designs, including ones that manually push the curtain along:
+
+![image](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/565a00b5ac5c878b1bd4327c88d3d3ff19cc7ec4341a38dc36dee06dcd7172f2.png)
+
+Which I actually really liked the look of, as they are a much better all round solution.
+
+But as my curtains have a pull cord, I decided that it would be easier to make something for that (especially as it was my first PCB project (but mainly that I wouldn't be able to really fix it if it didn't work, as I'm not easily able to get parts remade after ordering)):
+
+![Curtain Cord](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/b9e76ac33a13bcc3d189d1a359a76fe1a99bebb0fcd8e8a03cf97bfac29af19e.png)
 
 ### 2026-10-07: # Researching Parts
 
