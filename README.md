@@ -4,16 +4,8 @@ This is a project to create a simple PCB to link a microcontroller to various pe
 
 The housing and CAD files can be found on [gwoolger/Curtain-Opener-3D](https://github.com/gwoolger/Curtain-Opener-3D)
 
-## For Reviewer
-
-I was looking back at things, and realised I had the wrong shipping location selected. So when I added things up again, the parts got to just under $100. What should I do? as I'm currently stuck on tier 2, and the website won't let me change it?
-
-The half life website says I'm at 24.1 hours, so should have enough for tier 3.
-
-So I guess I'm wondering if it can be sent back for changes, so I can update it?
-
 ## Repo Info
-Contains the PCB design files and documentation for the creation of a PCB to control a stepper motor which is designed to open curtains with a pull cord.
+Contains the PCB design files, documentation and code for the creation of a PCB to control a stepper motor which is designed to open curtains with a pull cord.
 
 ## Use Case
 The PCB will be for an attachment to replace the curtain cord tensioner to automatically open and close the curtain.
@@ -54,22 +46,24 @@ Actually surprisingly cheap, due to AliExpress being clutch.
 | 6pcs momentary push button | 1 | AliExpress | $6.78 | $6.78 | [link](https://www.aliexpress.com/item/1005006695980453.html?spm=a2g0n.productlist.0.0.7c69zHexzHexCV&aff_platform=msite&m_page_id=&pdp_ext_f=%7B%22order%22%3A%226579%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%216.78%212.97%21%21%2145.01%2119.73%21%402103956a17926087999327038e1016%2112000038033411774%21sea%21GB%218513385029%21ABX%211%210%21n_tag%3A-29910%3Bd%3A98c60280%3Bm03_new_user%3A-29895%3BpisId%3A5000000218644952&algo_pvid=16f5e7d4-dc96-4769-b291-ecf6f31a9637&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005006695980453%7C_p_origin_prod%3A) |
 | 10pcs BMP280 | 1 | AliExpress | $3.66 | $3.66 | [link](https://www.aliexpress.com/item/1005008511564094.html?spm=a2g0n.productlist.0.0.7cfb155cdzV7SG&aff_platform=msite&m_page_id=&pdp_ext_f=%7B%22order%22%3A%226533%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%212.16%212.15%21%21%212.16%212.15%21%40210398e917926089354184288e1043%2112000045490825870%21sea%21GB%218513385029%21ABX%211%210%21n_tag%3A-29910%3Bd%3A98c60280%3Bm03_new_user%3A-29895%3BpisId%3A5000000218644952&algo_pvid=1b21626c-e5ee-4595-880e-d2d2fad266a7&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005008511564094%7C_p_origin_prod%3A) |
 | 5pcs mini 360 buck | 1 | AliExpress | $6.63 | $6.63 | [link](https://www.aliexpress.com/item/1005007823534769.html?spm=a2g0n.productlist.0.0.565bH2W1H2W13f&aff_platform=msite&m_page_id=&pdp_ext_f=%7B%22order%22%3A%224992%22%2C%22eval%22%3A%221%22%2C%22orig_sl_item_id%22%3A%221005007823534769%22%2C%22orig_item_id%22%3A%221005008498998352%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%212.66%211.28%21%21%2117.63%218.46%21%400b1585c117926090884431281e0db9%2112000061130607317%21sea%21GB%218513385029%21ABX%211%210%21n_tag%3A-29910%3Bd%3A98c60280%3Bm03_new_user%3A-29895&algo_pvid=922e4651-2784-4d9f-a299-0bc4856d6bf4&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005007823534769%7C_p_origin_prod%3A1005008498998352) |
-| 2s 18650 holder | 1 | AliExpress | $4.31 | $4.31 | [link](https://www.aliexpress.com/item/1005013266198026.html?spm=a2g0n.productlist.0.0.318dMJc7MJc744&aff_platform=msite&m_page_id=&pdp_ext_f=%7B%22order%22%3A%2225498%22%2C%22eval%22%3A%221%22%2C%22orig_sl_item_id%22%3A%221005013266198026%22%2C%22orig_item_id%22%3A%221005008803291008%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%214.31%212.15%21%21%2128.62%2114.25%21%4021038a8017926093185597361e1069%2112000061080661671%21sea%21GB%218513385029%21ABX%211%210%21n_tag%3A-29910%3Bd%3A98c60280%3Bm03_new_user%3A-29895%3BpisId%3A5000000218644952&algo_pvid=130109a3-b8cb-4bcc-b6fb-92d0ee055a6d&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005013266198026%7C_p_origin_prod%3A1005008803291008) |
+| 2s 18650 holder | 1 | AliExpress | $4.34 | $4.34 | [link](https://www.aliexpress.com/item/1005013266198026.html?spm=a2g0n.productlist.0.0.318dMJc7MJc744&aff_platform=msite&m_page_id=&pdp_ext_f=%7B%22order%22%3A%2225498%22%2C%22eval%22%3A%221%22%2C%22orig_sl_item_id%22%3A%221005013266198026%22%2C%22orig_item_id%22%3A%221005008803291008%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%214.31%212.15%21%21%2128.62%2114.25%21%4021038a8017926093185597361e1069%2112000061080661671%21sea%21GB%218513385029%21ABX%211%210%21n_tag%3A-29910%3Bd%3A98c60280%3Bm03_new_user%3A-29895%3BpisId%3A5000000218644952&algo_pvid=130109a3-b8cb-4bcc-b6fb-92d0ee055a6d&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005013266198026%7C_p_origin_prod%3A1005008803291008) |
 | 820pcs resistor kit with box | 1 | AliExpress | $6.31 | $6.31 | [link](https://www.aliexpress.com/item/1005011772534173.html?mp=1&pdp_npi=6%40dis%21USD%21USD+6.31%21USD+6.31%21%21USD+6.31%21%21%21%40210382de17926091989282068e0ebc%2112000056500803490%21ct%21GB%218513385029%21%211%210%21) |
 | 2s 20a balanced BMS | 1 | AliExpress | $1.21 | $1.21 | [link](https://www.aliexpress.com/item/1005010010254856.html?spm=a2g0n.productlist.0.0.70d4aFIDaFID4k&browser_id=c47aa3d29b4c48bc919fdf8c3cb51026&aff_platform=msite&m_page_id=nbxai6x6q3ycabkj1a15fdd4cf121643fa29143867&pdp_ext_f=%7B%22order%22%3A%22239%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%2111.07%2111.07%21%21%2173.50%2173.50%21%40210398e917926097010671192e0d2f%2112000050832742913%21sea%21GB%218513385029%21ABX%211%210%21n_tag%3A-29910%3Bd%3A98c60280%3Bm03_new_user%3A-29895&algo_pvid=e02b6057-bcab-4b8e-b30b-8bba74e4837c&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005010010254856%7C_p_origin_prod%3A&search_p4p_id=2026102112082161076216341280001513554_4) |
 | 2mm 1.5m desoldering braid | 1 | AliExpress | $2.30 | $2.30 | [link](https://www.aliexpress.com/item/1005005398523384.html?mp=1&pdp_npi=6%40dis%21USD%21USD+2.30%21USD+0.78%21%21USD+0.78%21%21%21%4021613be817926097905165058e0ef6%2112000032915095979%21ct%21GB%218513385029%21%211%210%21) |
 | PCB | 1 | JLCPCB | $4.00 | $4.00 | [link](https://jlcpcb.com) |
 | Estimated total shipping | 1 |  |  | $4.77 |  |
-| **Total (incl. shipping)** |  |  |  | **$98.65** |  |
+| **Total (incl. shipping)** |  |  |  | **$98.68** |  |
 
-Got more than 1 part for a few in case I fry one or something. Also might do something with the temp sensors in build week.
+AliExpress shipping is included in the price, as they are Choice items, so shipping is just for JLCPCB.
 
+For the 18650 Cells - was fairly expensive, so  Ihad to buy seperately (also deleivery still takes like a month and a half. so had to buy already)
 
-They add up to more here, but will be less due do AliExpress coupons etc.
+| Batteries | Qty | Supplier | Cost/item | Total Cost | link |
+|---|---:|---|---:|---:|---|
+| EVE 35V 18650 Cell (3500mAh, 10.2A) | 1 | NKON | 1.99 | 3.98 | [link](https://www.nkon.nl/en/eve-inr18650-35v-3500mah-10-2a.html) |
+| Estimated total shipping | 1 |  |  | $26 |  |
+| **Total (incl. shipping)** |  |  |  | **$29.98** |  |
 
-But still under the $100 cap for tier 3.
-
-Oh, and AliExpress shipping is included in the price, as they are Choice items, so shipping is just for JLCPCB.
 
 ### BOM description
 Added as in slack seems people are getting returned for:
