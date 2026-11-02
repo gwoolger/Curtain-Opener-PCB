@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 1 | Tier 3 | 19.75h | 7 |
+| Week 1 | Tier 3 | 19.85h | 7 |
 
 ## Contents
 
@@ -59,7 +59,7 @@ Also worked on starting the documentation. And did some research on my phone, as
 
 ### 2026-10-07: # Did the bulk of the Schematic work
 
-**3.68h**
+**3.78h**
 
 # Did the bulk of the Schematic work
 
@@ -69,6 +69,14 @@ Now at a stage I am happy with, but still have to add a few more components.
 Hoping that from this point on its gets a bit easier, as so far its been pretty complicated. Although I spent way too long trying to figure out how to use pin headers, and it turns out you don't even need them lol (at least in the schematic).
 
 ![PCB Schematic v1](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/8d57acc4a0f5deee26658b55fcc6f958cbc1f2d7fc239c19368e5942ffccbe44.png)
+
+Also did the complicated task of wiring up a k7805-1000r3 buck regulator, as had fun reading through the datasheet (on my phone) figuring out what it needed.
+
+Although did also some AI just to fact check if things worked. Though I did find and connect all the parts manually (As I'm a beginner, I figured this was better than flooding the slack with "does this work").
+
+![image](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/3ec6332ca8dbc921cf9d73dce48f78a86213734c9f57a49445e325e0d411ef58.png)
+
+This is primarily all on lapse, but had some more time without lapse going of just figuring out things, looking at datasheets etc
 
 [Timelapse](https://lookout.hackclub.com/api/media/85e5145f-0ac4-4d8b-bffd-80867fa5994d/video.mp4)
 
