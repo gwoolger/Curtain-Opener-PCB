@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 1 | Tier 3 | 19.85h | 7 |
+| Week 1 | Tier 3 | 20.05h | 7 |
 
 ## Contents
 
@@ -82,7 +82,7 @@ This is primarily all on lapse, but had some more time without lapse going of ju
 
 ### 2026-10-08: # Simplifying the Schematic
 
-**2.32h**
+**2.52h**
 
 # Simplifying the Schematic
 
@@ -96,6 +96,15 @@ Still need to add ports for the temp sensor, but I think this is nearing the PCB
 
 Current state of things:
 ![image](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/8b82489b87f5091e2c6964a42f49b6c2a7c543c4c817f1ed667ba8f414be34e4.png)
+
+Spent quite a lot of time just neatening up the schematic connections, as I had previously done them in a very messy way:
+
+Before:
+
+![image](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/07f1e883e750a48de2af757cee7ff368971b7dc154141a5a3ccf3661e991bbd8.png)
+After
+
+![image](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/ddb22706bac3d81f818c28717d4b44578489232f64e6d3c03bebc3e476e9d63b.png)
 
 [Timelapse](https://lookout.hackclub.com/api/media/69e66ab7-cf3e-4bcb-a827-00b0ca71b422/video.mp4)
 
