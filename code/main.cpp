@@ -15,12 +15,7 @@ const char* WIFI_PASS  = "WIFI_PASSWORD";
 const int OPEN_HOUR  = 7;  // 07:00 AM
 const int CLOSE_HOUR = 19; // 07:00 PM
 
-// stepper on tmc2209
-const uint8_t PIN_STEP = D2;
-const uint8_t PIN_DIR  = D3;
-const uint8_t PIN_EN   = D5;
-<<<<<<< HEAD
-=======
+/* old
 const uint8_t PIN_UART = D4;
 const uint8_t PIN_DIAG = D1;
 
@@ -31,7 +26,12 @@ const uint8_t PIN_SCL = D7;
 // Power / input
 //const uint8_t PIN_VBAT   = D0; not this one, as would fry esp if connected
 const uint8_t PIN_BUTTON = D9;
->>>>>>> b21986dd35723cc1e8c07e87a067b4fec5ba5bbc
+*/
+
+// stepper on tmc2209
+const uint8_t PIN_STEP = D2;
+const uint8_t PIN_DIR  = D3;
+const uint8_t PIN_EN   = D5;
 
 void runStepper(bool openCurtain) {
     Serial.println(openCurtain ? "Opening..." : "Closing...");
@@ -49,6 +49,60 @@ void runStepper(bool openCurtain) {
     Serial.println("Done.");
 }
 
+struct tm getTime() {
+    // Connect to Wi-Fi
+    WiFi.begin(WIFI_SSID, WIFI_PASS);
+    while (WiFi.status() != WL_CONNECTED) {
+        delay(500);
+        Serial.print(".");
+    }
+
+
+    struct tm timeinfo;
+
+    // Sync Time. For UK currently With daylight savings
+    configTime(0, 0, "pool.ntp.org");
+    setenv("TZ", "GMT0BST,M3.5.0/1,M10.5.0/2", 1);
+    tzset();
+
+    while (!getLocalTime(&timeinfo)) {
+        Serial.println("Failed to obtain time");
+        yield();        // might spam serial, but, it worked on an older project with no problems.
+    }
+
+    Serial.printf("\nGot Time at %02d:%02d\n", timeinfo.tm_hour, timeinfo.tm_min);
+
+    WiFi.disconnect();
+
+    return timeinfo;
+}
+
+
+
+uint32_t getSleepTime(struct tm &timeinfo) {
+    int hour = timeinfo.tm_hour;
+    int min  = timeinfo.tm_min;
+    int secleeway = 10;
+    uint32_t secs = ((hour * 60) + min) * 60;
+    uint32_t waitsecs;
+
+    open_sec_time = OPEN_HOUR * 3600;
+    close_sec_time = CLOSE_HOUR * 3600;
+
+    // checking for morning wake up
+    if (secs < open_sec_time) {
+        waitsecs = open_sec_time - secs - secleeway;
+    }
+    else if (secs < close_sec_time) {
+        waitsecs = close_sec_time - secs - secleeway;
+    }
+    else {
+        waitsecs = 86400 - secs + open_sec_time - secleeway;
+    }
+
+    return waitsecs;
+}
+
 void setup() {
     Serial.begin(115200);
     
@@ -57,31 +111,13 @@ void setup() {
     pinMode(PIN_EN, OUTPUT);
     digitalWrite(PIN_EN, HIGH); // Default to disabled (pulled low high anyway)
 
-    // Connect to Wi-Fi
-    WiFi.begin(WIFI_SSID, WIFI_PASS);
-    while (WiFi.status() != WL_CONNECTED) {
-        delay(500);
-        Serial.print(".");
-    }
+    struct tm timeinfo = getTime();
 
-    // Sync Time. For UK currently.
-    configTime(0, 0, "pool.ntp.org");
-    setenv("TZ", "GMT0BST,M3.5.0/1,M10.5.0/2", 1);
-    tzset();
 
-    time_t now = time(nullptr);
-    while (now < 1600000000) {
-        delay(500);
-        now = time(nullptr);
-    }
 
-    struct tm timeInfo;
-    getLocalTime(&timeInfo);
-    int currentHour = timeInfo.tm_hour;
-    int currentMin  = timeInfo.tm_min;
-    Serial.printf("\nWoke up at %02d:%02d\n", currentHour, currentMin);
 
-    uint64_t hoursToSleep = 0;
+    getSleepTime(*timeinfo)
+    uint32_t secsToSleep = 0;
 
     
     if (currentHour >= OPEN_HOUR && currentHour < CLOSE_HOUR) {
