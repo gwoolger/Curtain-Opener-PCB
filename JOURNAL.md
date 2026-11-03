@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 1 | Tier 3 | 22.47h | 8 |
+| Week 1 | Tier 3 | 23.4h | 8 |
 
 ## Contents
 
@@ -21,7 +21,7 @@
 5. [2026-10-09: # Started Circuitry](#2026-10-09-started-circuitry)
 6. [2026-10-11: # Routing PCB](#2026-10-11-routing-pcb)
 7. [2026-10-11: # Finished the Project](#2026-10-11-finished-the-project)
-8. [2026-11-03: # Started Code](#2026-11-03-started-code)
+8. [2026-11-03: # Slightly redid the PCB](#2026-11-03-slightly-redid-the-pcb)
 
 ## Design
 
@@ -217,22 +217,30 @@ actually no, PCB looks cooler
 - 3D modelling a case?
 - Adding solar panels?
 
-### 2026-11-03: # Started Code
+### 2026-11-03: # Slightly redid the PCB
 
-**1h**
+**1.93h**
 
-# Started Code
+# Slightly redid the PCB
 
-Started writing the code for the actual stepper control for the microcontroller
+(did this a while ago, and only journaling now)
 
-Started writing the code for the actual stepper control for the microcontroller
+So when I was thinking about how I'd make the code to home the stepper, I found out that the DIAG pin on the TMC2209 still might not be good enough for homing.
 
-Started writing the code for the actual stepper control for the microcontroller
+So I decided to get a sensor that does highly accurate current sensing, and I ended up going with the INA219.
 
-![11169](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/510e701577fefb83282009d8396a468e2dd3aed1af9df59481048c66a74e90c7.png)
+![image](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/e900c74d265f4f21bb6c6f6304046a1796442f0c9794ec4a8666765bec3485e2.png)
 
-![11e69](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDe
+So it turns out, that as well as measuring current, it also measures voltage - all over I2C. Making my current voltage divider setup obsolete.
 
-![11170](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/bcfb74febc27f9455012f23b0dd831d35c7a7db09b1cd2fb00f380e39961ac0e.png)
+So I basically just spent the rest of this session rerouting the PCB.
 
-/510e701577fefb83282009d8396a468e2dd3aed1af9df59481048c66a74e90c7.png)
+![image](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/abdd50986b89d42d87b3032b9e8fa08de0f8e75215a11f8547b10d3aac26d148.png)
+
+I also did some little QoL things, like added a hole on the PCB for the ESP antennae, added silk screens, ground pours, cleaned up component placements etc. (Basically stuff I learned to do, after not being a complete beginner)
+
+## tips
+
+Ground pours are actually so goated
+
+Oh and make sure to use the actual coordinate changer in the right panel in EasyEDA, otherwise you end up with some reubbish board dimensions like 68.93 by 59.42 - or in that ballpark. cant even find the exact dimensions ive ended up with. and all the mounting holes are a bit off, so mounting it will be fun.
