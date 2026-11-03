@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 1 | Tier 3 | 21.3h | 8 |
+| Week 1 | Tier 3 | 22.47h | 8 |
 
 ## Contents
 
@@ -171,7 +171,7 @@ Also didn't realise that the TMC 2209 drivers have different pinouts on the modu
 
 ### 2026-10-11: # Finished the Project
 
-**3.83h**
+**5h**
 
 # Finished the Project
 ### Finished Choosing Parts
@@ -182,12 +182,16 @@ As a beginner to PCB design, I thought it would be much harder, especially given
 
 ![EasyEDA DRC check](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/2ee2c2d729556b90083bd3a7d52b3a7aaa07faaaeaa98d3500b038a8a21fae5f.png)
 
+Also don't think I've mentioned it yet, but I decided to swap the kr8705 1000r3 buck regulator out for a standard 5V mini module, just as they are a lot cheaper, and in some cases, more efficient.
+
 Also was made a lot simpler in that I could just use copper pours for the Ground plane.
 
 ### Finished the BOM
 Spent a fair bit of time on Aliexpress and JLCPCB looking at how much things will cost, and it all seems to add up quite nicely.
 
-![aliexpress checkout window](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/416319bffc8aa409ae5618ccaecb064b7df773c79f7bcc7be9355fddc10d3f09.png)
+![aliexpress checkout window](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/178457caa95ec849cd6f47a0819a92cab28ebc1fe81a67f9553f71e69786e421.png)
+
+The Aliexpress stuff seems cheap there, but its actually quite a lot more expensive, as that is appplying some random discounts and new shopper deals which won't apply at checkout.
 
 ![jlcpcb checkout window](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/375e00f3889d514fd2d9984a22e3cd4ff96f5eddaff14631f334f52c121f8fcb.png)
 
@@ -212,8 +216,6 @@ actually no, PCB looks cooler
 ### And for the future
 - 3D modelling a case?
 - Adding solar panels?
-
-[Timelapse](https://lookout.hackclub.com/api/media/821b166a-a3f8-4242-a176-5f5589da834f/video.mp4)
 
 ### 2026-11-03: # Started Code
 
