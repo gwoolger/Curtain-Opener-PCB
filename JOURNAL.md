@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 1 | Tier 3 | 21.05h | 8 |
+| Week 1 | Tier 3 | 21.3h | 8 |
 
 ## Contents
 
@@ -141,13 +141,25 @@ So the lapse covers some of the PCB layout, but none of the planning that went i
 
 ### 2026-10-11: # Routing PCB
 
-**2.25h**
+**2.5h**
 
 # Routing PCB
 
 Finally started routing the PCB.
 
 ![image](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/8dba82f9980c679dac0117db781c8474dda3e7e4cd7f1a626de2244aad4687e2.png)
+
+So I initially tried using the Autorouter for this, as I thought it would be a lot faster, but it ended up with like 5 vias.
+
+But I also had to go through and figure out what a good width for the traces was, so I ended up with basically 0.8mm for anything that could need mildly high current - so basically the power system and the main power bus.
+
+Then had to figure out which things like U1, U2, R1 everything connected to - in the end, I did what I should have done before, and went back into the schematic to change them all to understandable names.
+
+![image](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/235ae3484459c5ea22862548fdad098cd6f9ba32e9d112898d682016bcf9dc15.png)
+
+And as I read that vias are bad, I decided to hand wire it.
+
+And it was probably a good decision, as I managed to get that down to a single via lol. So much for Autorouters being good.
 
 Its really nice seeing it come together.
 
@@ -156,10 +168,6 @@ Unfortunately though, as I'm adding up the BOM, I'd be getting everything from A
 Also didn't realise that the TMC 2209 drivers have different pinouts on the modules. Had previously assumed they were all the same, but now have to fork out some more money for a bigtreetech clone one, as I cant be bothered to redo the schematic for a different clone.
 
 ![image](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/53a3a75d35c93267490985edc1a38c12b93f93aef2b969682353b6004992e945.png)
-
-[Timelapse](https://lookout.hackclub.com/api/media/f7163a4e-1072-4a70-8309-0238437f99e7/video.mp4)
-
-[Timelapse](https://lookout.hackclub.com/api/media/95f9dab8-d01c-4b5d-b3b2-3f0ee7a9e706/video.mp4)
 
 ### 2026-10-11: # Finished the Project
 
