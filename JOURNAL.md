@@ -135,6 +135,8 @@ Before I actually layed out the PCB, I had a go at thinking how I could lay it o
 
 And in the end, I decided to go with a rectangular shape (as seen in the image and the pcb layout above), that will fit cleanly in the case.
 
+So the lapse covers some of the PCB layout, but none of the planning that went into it. Or later iterations that it was changed in.
+
 [Timelapse](https://lookout.hackclub.com/api/media/50238e16-1651-495c-84c4-61cd08e26beb/video.mp4)
 
 ### 2026-10-11: # Routing PCB
