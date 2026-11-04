@@ -6,7 +6,7 @@
 > [!NOTE]
 > This devlog is mirrored from [Half Life](https://halflife.hackclub.com) ([open the project](https://halflife.hackclub.com/projects/cmuuwliy10b7p01smtwowgbhx)). Editing it here will not change the platform's copy, and the next sync overwrites this file.
 
-> An automatic Curtain opener
+> An automatic Curtain opener PCB. It combines a battery management system, an efficient microcontroller, and a stepper driver. It is designed for curtains that have a loop of cord on one side, which when you pull either way, it will open or close the curtains (the curtains have to be on tracks etc.)
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
@@ -338,3 +338,5 @@ Although a stepper control one does look a bit more intestesting, especially as 
 Once I've built it, and have debugged the current code, then I will probably expand the functionality more, as I still have Diag, and the UART bits that I could add.
 
 But in its current stage, it will do what the review changes asked for: basic curtain control code. (If a bit more as I added some probably too complex ntp stuff for now.)
+
+Oh and just as the review asked, any time that is journaled is extra time on top of any lapse things. They are not duplicate time recordings.
