@@ -54,24 +54,36 @@ void runStepper(bool openCurtain) {
 }
 
 struct tm getTime() {
-    // Connect to Wi-Fi
     WiFi.begin(WIFI_SSID, WIFI_PASS);
-    while (WiFi.status() != WL_CONNECTED) {
+    int wifiAttempts = 0;
+    while (WiFi.status() != WL_CONNECTED && wifiAttempts < 20) {
         delay(500);
         Serial.print(".");
+        wifiAttempts++;
     }
 
-
     struct tm timeinfo;
+    // Default time if sync completely fails - not sure if there is a more elegant solution for this
+    timeinfo.tm_hour = 12;
+    timeinfo.tm_min = 0;
+    timeinfo.tm_sec = 0;
+
+    if (WiFi.status() != WL_CONNECTED) {
+        Serial.println("\nWiFi failed to connect. Using fallback time.");
+        return timeinfo;
+    }
 
     // Sync Time. For UK currently With daylight savings
     configTime(0, 0, "pool.ntp.org");
     setenv("TZ", "GMT0BST,M3.5.0/1,M10.5.0/2", 1);
     tzset();
 
-    while (!getLocalTime(&timeinfo)) {
-        Serial.println("Failed to obtain time");
-        yield();        // might spam serial, but, it worked on an older project with no problems.
+    // 5 sec timeout
+    int ntpAttempts = 0;
+    while (!getLocalTime(&timeinfo) && ntpAttempts < 10) {
+        Serial.println("Failed to obtain time, retrying...");
+        delay(500);
+        ntpAttempts++;
     }
 
     Serial.printf("\nGot Time at %02d:%02d\n", timeinfo.tm_hour, timeinfo.tm_min);
@@ -80,8 +92,6 @@ struct tm getTime() {
 
     return timeinfo;
 }
-
-
 
 uint32_t getSleepTime(struct tm &timeinfo) {
     int hour = timeinfo.tm_hour;
@@ -93,9 +103,9 @@ uint32_t getSleepTime(struct tm &timeinfo) {
 
     uint32_t open_sec_time = OPEN_HOUR * 3600;
     uint32_t close_sec_time = CLOSE_HOUR * 3600;
-    uint32_t safetyBuffer = 5; 
+    uint32_t safetyBuffer = 15;
 
-    // checking for morning wake up
+    // wake up times
     if (secs < open_sec_time) {
         waitsecs = open_sec_time - secs + safetyBuffer;
     }
@@ -118,11 +128,9 @@ void setup() {
     digitalWrite(PIN_EN, HIGH); // Default to disabled (pulled low high anyway)
 
     struct tm timeinfo = getTime();
-    uint32_t secsToSleep = getSleepTime(timeinfo); 
     
     int currentHour = timeinfo.tm_hour; 
     int currentMin = timeinfo.tm_min;   
-
 
     if (currentHour == OPEN_HOUR && currentMin < 5) {       // idk if cycling in the first 5 min will be a problem
         runStepper(true);
@@ -131,6 +139,8 @@ void setup() {
         runStepper(false);
     }
 
+    timeinfo = getTime();       // getting time here after stepper has run is more accurate
+    uint32_t secsToSleep = getSleepTime(timeinfo); 
 
     uint32_t displayHours = secsToSleep / 3600;
     uint32_t displayMins = (secsToSleep % 3600) / 60;
@@ -139,7 +149,6 @@ void setup() {
     Serial.printf("Going to deep sleep for %02u hours, %02u minutes, and %02u seconds (%u total seconds)...\n", 
         displayHours, displayMins, displaySecs, secsToSleep);     // Deep sleep.
         
-    
     esp_sleep_enable_timer_wakeup(secsToSleep * 1000000ULL); // meant to take microsecconds. ULL
     esp_deep_sleep_start();
 }
