@@ -8,6 +8,9 @@
 // And can change during the 5 minutes after the hour. Could cause multiple actuations, but
 // provbably wont be a problem.
 
+// Also even with clock drifts etc, it wont be a problem, as there is a 5 min leeway,
+// and it syncs with ntp so should realign.
+
 #include <Arduino.h>
 #include <WiFi.h>
 #include <time.h>
@@ -37,6 +40,8 @@ const uint8_t PIN_STEP = D2;
 const uint8_t PIN_DIR  = D3;
 const uint8_t PIN_EN   = D5;
 
+RTC_DATA_ATTR bool curtainIsOpen = false;   // will persist over deep sleep
+
 void runStepper(bool openCurtain) {
     Serial.println(openCurtain ? "Opening..." : "Closing...");
     digitalWrite(PIN_EN, LOW); // Enable driver (Active LOW) - kept high by 10k resistor
@@ -50,6 +55,7 @@ void runStepper(bool openCurtain) {
         delayMicroseconds(1000);
     }
     digitalWrite(PIN_EN, HIGH); // Disable driver for better battery life
+    curtainIsOpen = openCurtain; // Update state in RTC memory after movement finishes
     Serial.println("Done.");
 }
 
@@ -103,7 +109,7 @@ uint32_t getSleepTime(struct tm &timeinfo) {
 
     uint32_t open_sec_time = OPEN_HOUR * 3600;
     uint32_t close_sec_time = CLOSE_HOUR * 3600;
-    uint32_t safetyBuffer = 15;
+    uint32_t safetyBuffer = 2;
 
     // wake up times
     if (secs < open_sec_time) {
@@ -113,7 +119,7 @@ uint32_t getSleepTime(struct tm &timeinfo) {
         waitsecs = close_sec_time - secs + safetyBuffer;
     }
     else {
-        waitsecs = 86400 - secs + open_sec_time + safetyBuffer;
+        waitsecs = (86400 - close_sec_time) + open_sec_time + safetyBuffer;
     }
 
     return waitsecs;
@@ -127,20 +133,31 @@ void setup() {
     pinMode(PIN_EN, OUTPUT);
     digitalWrite(PIN_EN, HIGH); // Default to disabled (pulled low high anyway)
 
+    uint32_t start = millis();
     struct tm timeinfo = getTime();
     
     int currentHour = timeinfo.tm_hour; 
     int currentMin = timeinfo.tm_min;   
 
-    if (currentHour == OPEN_HOUR && currentMin < 5) {       // idk if cycling in the first 5 min will be a problem
+    // Runs only if time falls in the activation window AND the curtain isn't already in that state
+    if (currentHour == OPEN_HOUR && currentMin < 5 && !curtainIsOpen) {       // so cant cycle anymore
         runStepper(true);
     }
-    else if (currentHour == CLOSE_HOUR && currentMin < 5) {
+    else if (currentHour == CLOSE_HOUR && currentMin < 5 && curtainIsOpen) {
         runStepper(false);
     }
 
-    timeinfo = getTime();       // getting time here after stepper has run is more accurate
-    uint32_t secsToSleep = getSleepTime(timeinfo); 
+
+    uint32_t elapsedSeconds = (millis() - start) / 1000;        // dont know why i didnt do this earlier
+    uint32_t baseSleepTime = getSleepTime(timeinfo);
+    
+    uint32_t secsToSleep;
+    if (baseSleepTime > elapsedSeconds) {
+        secsToSleep = baseSleepTime - elapsedSeconds;
+    } 
+    else {
+        secsToSleep = baseSleepTime;
+    }
 
     uint32_t displayHours = secsToSleep / 3600;
     uint32_t displayMins = (secsToSleep % 3600) / 60;
