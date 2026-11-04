@@ -339,4 +339,4 @@ Once I've built it, and have debugged the current code, then I will probably exp
 
 But in its current stage, it will do what the review changes asked for: basic curtain control code. (If a bit more as I added some probably too complex ntp stuff for now.)
 
-Oh and just as the review asked, any time that is journaled is extra time on top of any lapse things. They are not duplicate time recordings.
+Oh and just as the review asked, any time that is journaled is extra time on top of any lapse things. They are not duplicate time recordings. Also in the code, loop() is designed to be empty. There will not be code there, as it will never be reached, as the ESP32 goes into deep sleep.
