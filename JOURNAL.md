@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 1 | Tier 3 | 33.17h | 9 |
+| Week 1 | Tier 3 | 33.37h | 9 |
 
 ## Contents
 
@@ -270,7 +270,7 @@ Whilst it says $75 there, it will be much more like the item total, before the d
 
 ### 2026-11-04: # CODING
 
-**7.8h**
+**8h**
 
 # CODING
 
