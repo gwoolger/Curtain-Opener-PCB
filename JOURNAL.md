@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 1 | Tier 3 | 23.4h | 8 |
+| Week 1 | Tier 3 | 25.37h | 8 |
 
 ## Contents
 
@@ -21,7 +21,7 @@
 5. [2026-10-09: # Started Circuitry](#2026-10-09-started-circuitry)
 6. [2026-10-11: # Routing PCB](#2026-10-11-routing-pcb)
 7. [2026-10-11: # Finished the Project](#2026-10-11-finished-the-project)
-8. [2026-11-03: # Slightly redid the PCB](#2026-11-03-slightly-redid-the-pcb)
+8. [2026-11-03: # Slightly redid the PCB, BOM work](#2026-11-03-slightly-redid-the-pcb-bom-work)
 
 ## Design
 
@@ -217,11 +217,11 @@ actually no, PCB looks cooler
 - 3D modelling a case?
 - Adding solar panels?
 
-### 2026-11-03: # Slightly redid the PCB
+### 2026-11-03: # Slightly redid the PCB, BOM work
 
-**1.93h**
+**3.9h**
 
-# Slightly redid the PCB
+# Slightly redid the PCB, BOM work
 
 (did this a while ago, and only journaling now)
 
@@ -244,3 +244,25 @@ I also did some little QoL things, like added a hole on the PCB for the ESP ante
 Ground pours are actually so goated
 
 Oh and make sure to use the actual coordinate changer in the right panel in EasyEDA, otherwise you end up with some reubbish board dimensions like 68.93 by 59.42 - or in that ballpark. cant even find the exact dimensions ive ended up with. and all the mounting holes are a bit off, so mounting it will be fun.
+
+## Redid the BOM
+
+Previously, I had the wrong shipping location selected, so things added up cheaper than I thought (its as Aliexpress shipping is actually bundled into Choice items, which I didn't realise before).
+
+Also had to add individual entries for each of the items for completeness - had most of the random Aliexpress things in a single entry before.
+
+So I had to do a bunch more looking around for what was feasible.
+
+Also there were some things like this:
+
+![image](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/7eee2196f7e5092690f56e803026ca69e90b84f58a2d6d0e44dc7f79537b6d1f.png)
+
+Where I thought it would be a lot cheaper - $2 for a stepper, but in reality, when I add things up in the cart, it comes up as $10.12 - just a fair bit more expensive.
+
+Do I essentially did a whole bunch more work  on the BOM, so I could get everything in budget - and had to go from tier 2 to tier 3.
+
+So my total for now:
+
+![image](https://halflife.hackclub-assets.com/sessions/QXCoV5Opaf2tVWRHLncynf97ZTE9HKDO/0c5369ccb8c7a8bcf57bafa87425c3d50ec1acc25824964c1c731d002a5dfe91.png)
+
+Whilst it says $75 there, it will be much more like the item total, before the discount - of $94. It just had that total up before a random one off sale - which it wont have when  I go to buy the parts, so the BOM just has the component's individual prices.
