@@ -2,7 +2,11 @@
 // I'm thinking Open meteo for pulling sunrise and sunset data
 
 // Havent implemented the tmc2209 UART thing yet, or I2C for the INA219 or BME280.
-// But the curtain should open and close automatically anyway
+// But the curtain should open and close automatically anyway at the specified times.
+
+// Currently getting curtain to toggle state 5 sec after hour turns - gives some buffer time.
+// And can change during the 5 minutes after the hour. Could cause multiple actuations, but
+// provbably wont be a problem.
 
 #include <Arduino.h>
 #include <WiFi.h>
@@ -72,7 +76,7 @@ struct tm getTime() {
 
     Serial.printf("\nGot Time at %02d:%02d\n", timeinfo.tm_hour, timeinfo.tm_min);
 
-    WiFi.disconnect();
+    WiFi.disconnect(true);
 
     return timeinfo;
 }
@@ -82,22 +86,24 @@ struct tm getTime() {
 uint32_t getSleepTime(struct tm &timeinfo) {
     int hour = timeinfo.tm_hour;
     int min  = timeinfo.tm_min;
-    int secleeway = 10;
-    uint32_t secs = ((hour * 60) + min) * 60;
+    int sec  = timeinfo.tm_sec;
+    
+    uint32_t secs = ((hour * 60) + min) * 60 + sec;
     uint32_t waitsecs;
 
-    open_sec_time = OPEN_HOUR * 3600;
-    close_sec_time = CLOSE_HOUR * 3600;
+    uint32_t open_sec_time = OPEN_HOUR * 3600;
+    uint32_t close_sec_time = CLOSE_HOUR * 3600;
+    uint32_t safetyBuffer = 5; 
 
     // checking for morning wake up
     if (secs < open_sec_time) {
-        waitsecs = open_sec_time - secs - secleeway;
+        waitsecs = open_sec_time - secs + safetyBuffer;
     }
     else if (secs < close_sec_time) {
-        waitsecs = close_sec_time - secs - secleeway;
+        waitsecs = close_sec_time - secs + safetyBuffer;
     }
     else {
-        waitsecs = 86400 - secs + open_sec_time - secleeway;
+        waitsecs = 86400 - secs + open_sec_time + safetyBuffer;
     }
 
     return waitsecs;
@@ -112,37 +118,29 @@ void setup() {
     digitalWrite(PIN_EN, HIGH); // Default to disabled (pulled low high anyway)
 
     struct tm timeinfo = getTime();
-
-
-
-
-    getSleepTime(*timeinfo)
-    uint32_t secsToSleep = 0;
-
+    uint32_t secsToSleep = getSleepTime(timeinfo); 
     
-    if (currentHour >= OPEN_HOUR && currentHour < CLOSE_HOUR) {
-
-        if (currentHour == OPEN_HOUR && currentMin < 5) {
-            runStepper(true);
-        }
-        hoursToSleep = CLOSE_HOUR - currentHour;
-
-    } 
+    int currentHour = timeinfo.tm_hour; 
+    int currentMin = timeinfo.tm_min;   
 
 
-    else {
-        if (currentHour == CLOSE_HOUR && currentMin < 5) {
-            runStepper(false);
-        }
-        hoursToSleep = (currentHour < OPEN_HOUR) ? (OPEN_HOUR - currentHour) : (24 - currentHour + OPEN_HOUR);
+    if (currentHour == OPEN_HOUR && currentMin < 5) {       // idk if cycling in the first 5 min will be a problem
+        runStepper(true);
+    }
+    else if (currentHour == CLOSE_HOUR && currentMin < 5) {
+        runStepper(false);
     }
 
-    Serial.printf("Going to deep sleep for %llu hours...\n", hoursToSleep);     // Deep sleep.
+
+    uint32_t displayHours = secsToSleep / 3600;
+    uint32_t displayMins = (secsToSleep % 3600) / 60;
+    uint32_t displaySecs = secsToSleep % 60;        // gotta be a more efficient way of doing this
+
+    Serial.printf("Going to deep sleep for %02u hours, %02u minutes, and %02u seconds (%u total seconds)...\n", 
+        displayHours, displayMins, displaySecs, secsToSleep);     // Deep sleep.
+        
     
-    WiFi.disconnect(true);
-    
-    
-    esp_sleep_enable_timer_wakeup(hoursToSleep * 3600ULL * 1000000ULL); // meant to take microsecconds. ULL
+    esp_sleep_enable_timer_wakeup(secsToSleep * 1000000ULL); // meant to take microsecconds. ULL
     esp_deep_sleep_start();
 }
 
