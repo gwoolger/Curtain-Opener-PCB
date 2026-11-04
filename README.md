@@ -51,8 +51,8 @@ Actually surprisingly cheap, due to AliExpress being clutch.
 | 2s 20a balanced BMS | 1 | AliExpress | $1.21 | $1.21 | [link](https://www.aliexpress.com/item/1005010010254856.html?spm=a2g0n.productlist.0.0.70d4aFIDaFID4k&browser_id=c47aa3d29b4c48bc919fdf8c3cb51026&aff_platform=msite&m_page_id=nbxai6x6q3ycabkj1a15fdd4cf121643fa29143867&pdp_ext_f=%7B%22order%22%3A%22239%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%2111.07%2111.07%21%21%2173.50%2173.50%21%40210398e917926097010671192e0d2f%2112000050832742913%21sea%21GB%218513385029%21ABX%211%210%21n_tag%3A-29910%3Bd%3A98c60280%3Bm03_new_user%3A-29895&algo_pvid=e02b6057-bcab-4b8e-b30b-8bba74e4837c&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005010010254856%7C_p_origin_prod%3A&search_p4p_id=2026102112082161076216341280001513554_4) |
 | 2mm 1.5m desoldering braid | 1 | AliExpress | $2.30 | $2.30 | [link](https://www.aliexpress.com/item/1005005398523384.html?mp=1&pdp_npi=6%40dis%21USD%21USD+2.30%21USD+0.78%21%21USD+0.78%21%21%21%4021613be817926097905165058e0ef6%2112000032915095979%21ct%21GB%218513385029%21%211%210%21) |
 | PCB | 1 | JLCPCB | $4.00 | $4.00 | [link](https://jlcpcb.com) |
-| Estimated total shipping | 1 |  |  | $4.77 |  |
-| **Total (incl. shipping)** |  |  |  | **$98.68** |  |
+| Estimated total shipping | 1 |  |  | $4.88 |  |
+| **Total (incl. shipping)** |  |  |  | **$98.79** |  |
 
 AliExpress shipping is included in the price, as they are Choice items, so shipping is just for JLCPCB.
 
