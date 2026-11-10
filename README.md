@@ -15,6 +15,9 @@ The PCB will be for an attachment to replace the curtain cord tensioner to autom
 This is primarily designed to work with curtains that have a pull cord, but the PCB could easily be adapted to work with curtains on a rail - just by using it as a sled.
 
 ## PCB
+The ESP32 intentionally has it's usb port in the middle of the board. This is as it won't need much access, and it will be mounted on pin headers anyway, so will be accessible by cable anyway - or just need some unplugging.
+
+
 Is a fairly simple PCB, with battery input from a 2S Li Ion pack, which powers a stepper motor and an ESP32. From my rough estimates, it should last easily for 4 months without a charge, and with better optimisation likely much longer.
 
 ![Schematic](images/Schematic_final.png)
