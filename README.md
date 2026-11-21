@@ -2,7 +2,9 @@
 
 This is a project to create a simple PCB to link a microcontroller to various peripherals to automatically open and close a curtain.
 
-It also costs narly the same amount to make 3 sets of the electronics as 1 set. See the BOM bit later on. (Thus as 3 sets fit in budget, I'm going to make 3, so I can make a whole room's curtains open automatically)
+It also costs nearly the same amount to make 2 sets of the electronics as 1 set. And then making 3 sets is essentially cheaper than making 2 sets, due to 3 pack multipacks.
+
+Was originally hoping to make 2, to close both sides of the curtain in a room, but as 3 is cheaper, will mostly buy the parts for 3, so I'll end up with about 2.5 curtain openers, so I could open 1 and a half curtains. Or 3 half curtains.
 
 The housing and CAD files can be found on [gwoolger/Curtain-Opener-3D](https://github.com/gwoolger/Curtain-Opener-3D)
 
@@ -44,11 +46,11 @@ Actually surprisingly cheap, due to AliExpress being clutch.
 
 Has gone through several iterations due to pricings and discounts.
 
-[HalfLife Grant BOM](BOM.csv)
+[HalfLife Grant BOM](old/BOM.csv)
 
-[Full pricing for 1 curtain opener with no discounts - just adds batteries](BOM_full.csv)
+[Full pricing for 1 curtain opener with no discounts - just adds batteries](old/BOM_full.csv)
 
-[New Latest BOM with discounts (makes 3 curtain openers within the budget](NEW_BOM.csv)
+[New Latest BOM with discounts (makes 3 curtain openers within the budget) No batteries](NEW_BOM.csv)
 
 `Aliexpress can be made much cheaper through splitting an order and using multiple discounts (as long as its for Choice items which have shipping included).`
 Also means that for others buying thes parts, they will most likely be more expensive, depending on how much time you are willing to put in to find deals.
