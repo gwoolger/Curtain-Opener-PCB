@@ -1,4 +1,4 @@
-Item,Description,Retail Cost,link
+Item,Description,Qty * Basic Sale Price,link
 order1, first aliexpress order, ,
 esp32c6, control everything, 28.05, https://www.aliexpress.com/item/1005007437769738.html?spm=a2g0o.cart.0.0.3ae338da4ZbMxW&mp=1&pdp_npi=6%40dis%21USD%21USD%2010.62%21USD%209.35%21%21USD%207.37%21%21%21%400b8848e317952622862273430e0fe9%2112000040759688331%21ct%21GB%218513385029%21%213%210%21
 nema 17 pancakes, move the curtain, 16.69, https://www.aliexpress.com/item/1005003874936862.html?spm=a2g0o.cart.0.0.3ae338da4ZbMxW&mp=1&pdp_npi=6%40dis%21USD%21USD%2022.81%21USD%2016.69%21%21USD%2014.06%21%21%21%400b8848e317952622862273430e0fe9%2112000036219123371%21ct%21GB%218513385029%21%211%210%21
@@ -21,6 +21,7 @@ soldering braid, unsoldering stuff, 0.80, https://www.aliexpress.com/item/100500
 capacitor set, mini fast battery, 7.01, https://www.aliexpress.com/item/1005005626707702.html?spm=a2g0o.cart.0.0.634a38dauKfUZA&mp=1&pdp_npi=6%40dis%21USD%21USD%207.12%21USD%207.01%21%21USD%207.01%21%21%21%400b15834017952655097758678e0f6b%2112000033796706984%21ct%21GB%218513385029%21%211%210%21
 resistor set, just resistors, 5.47, https://www.aliexpress.com/item/1005011772534173.html?spm=a2g0o.cart.0.0.634a38dauKfUZA&mp=1&pdp_npi=6%40dis%21USD%21USD%206.27%21USD%205.47%21%21USD%205.47%21%21%21%400b15834017952655097758678e0f6b%2112000056500803490%21ct%21GB%218513385029%21%211%210%21
 jst conector set, for connecting things nicely, 2.93, https://www.aliexpress.com/item/1005006498660940.html?spm=a2g0o.cart.0.0.634a38dauKfUZA&mp=1&pdp_npi=6%40dis%21USD%21USD%203.12%21USD%202.93%21%21USD%202.93%21%21%21%400b15834017952655097758678e0f6b%2112000037425305641%21ct%21GB%218513385029%21%211%210%21&pdp_ext_f=%7B%22cart2PdpParams%22%3A%7B%22pdpBusinessMode%22%3A%22retail%22%7D%7D
+usbc current voltage meter, to check the batteries are being charged correctly, 7.39, https://www.aliexpress.com/item/1005007487372253.html?spm=a2g0o.cart.0.0.47aa38da101dpX&mp=1&pdp_npi=6%40dis%21USD%21USD%207.46%21USD%207.39%21%21USD%206.69%21%21%21%4021038db317952686426545569e0e6d%2112000040975338171%21ct%21GB%218513385029%21%211%210%21
 discount3, $4 off orders $21+, -4,
 ,,,
 order3, only jlcpcb order,,

@@ -31,6 +31,8 @@ Again, a relatively simple PCB, without that many connections.
 | --- | --- |
 | ![PSB Front](images/PCB_Front.png) | ![PCB Back](images/PCB_Pack.png) |
 
+Are currently old images, but the current board is similar enough I'm not changing it yet.
+
 ## Code
 
 Currently just connects to NTP to get the time, and if it is within the hardcoded open or close times it wil run. then in either case, it will work out the next time it needs to wake up, and will then go to deep sleep until then.
@@ -47,3 +49,17 @@ Has gone through several iterations due to pricings and discounts.
 [Full pricing for 1 curtain opener with no discounts - just adds batteries](BOM_full.csv)
 
 [New Latest BOM with discounts (makes 3 curtain openers within the budget](NEW_BOM.csv)
+
+`Aliexpress can be made much cheaper through splitting an order and using multiple discounts (as long as its for Choice items which have shipping included).`
+Also means that for others buying thes parts, they will most likely be more expensive, depending on how much time you are willing to put in to find deals.
+
+### With latest BOM and discounts:
+
+|Store|Price|
+|---|---|
+| Aliexpress Order 1 | $53.96 |
+| Aliexpress Order 2 | $40.47 |
+| JLCPCB | $2.30 |
+| **Total** | **$96.73** |
+| | |
+|`(Not included in grant money)` Batteries | ~$35|
