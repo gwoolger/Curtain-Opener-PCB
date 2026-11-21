@@ -1,0 +1,29 @@
+Item,Description,Retail Cost,link
+order1, first aliexpress order, ,
+esp32c6, control everything, 28.05, https://www.aliexpress.com/item/1005007437769738.html?spm=a2g0o.cart.0.0.3ae338da4ZbMxW&mp=1&pdp_npi=6%40dis%21USD%21USD%2010.62%21USD%209.35%21%21USD%207.37%21%21%21%400b8848e317952622862273430e0fe9%2112000040759688331%21ct%21GB%218513385029%21%213%210%21
+nema 17 pancakes, move the curtain, 16.69, https://www.aliexpress.com/item/1005003874936862.html?spm=a2g0o.cart.0.0.3ae338da4ZbMxW&mp=1&pdp_npi=6%40dis%21USD%21USD%2022.81%21USD%2016.69%21%21USD%2014.06%21%21%21%400b8848e317952622862273430e0fe9%2112000036219123371%21ct%21GB%218513385029%21%211%210%21
+2a 10a bms, protect the battery, 4.02, https://www.aliexpress.com/item/1005006041486774.html?spm=a2g0o.cart.0.0.634a38dauKfUZA&mp=1&pdp_npi=6%40dis%21USD%21USD%201.34%21USD%201.34%21%21USD%201.13%21%21%21%400b15834017952653556894690e0f6b%2112000035452245650%21ct%21GB%218513385029%21%213%210%21
+push buttons, toggle curtain state, 2.85, https://www.aliexpress.com/item/1005006695980453.html?spm=a2g0o.cart.0.0.634a38dauKfUZA&mp=1&pdp_npi=6%40dis%21USD%21USD%206.80%21USD%202.85%21%21USD%202.41%21%21%21%400b15834017952654259416786e0f6b%2112000038033411774%21ct%21GB%218513385029%21%211%210%21
+pin headers, connect things, 2.29, https://www.aliexpress.com/item/1005010759653046.html?spm=a2g0o.cart.0.0.634a38dauKfUZA&mp=1&pdp_npi=6%40dis%21USD%21USD%204.88%21USD%202.29%21%21USD%201.94%21%21%21%400b15834017952654259416786e0f6b%2112000053415962296%21ct%21GB%218513385029%21%211%210%21
+ina219, sense voltage and current, 4.88, https://www.aliexpress.com/item/32469098903.html?spm=a2g0o.cart.0.0.634a38dauKfUZA&mp=1&pdp_npi=6%40dis%21USD%21USD%204.88%21USD%204.88%21%21USD%204.13%21%21%21%400b15834017952654287176828e0f6b%2112000057342623699%21ct%21GB%218513385029%21%211%210%21
+2s batt holders, hold the batteries, 7.17, https://www.aliexpress.com/item/4001152338150.html?spm=a2g0o.cart.0.0.634a38dauKfUZA&mp=1&pdp_npi=6%40dis%21USD%21USD%202.39%21USD%202.39%21%21USD%202.02%21%21%21%400b15834017952655057228602e0f6b%2110000014908199354%21ct%21GB%218513385029%21%213%210%21
+discount1, $10 off orders over $65, -10,
+discount2, $1.81 off a store, -1.81,
+,,,
+order2, second aliexpress order,,
+2s 2a balanced charging boards, charge cells, 2.55, https://www.aliexpress.com/item/1005013617222574.html?spm=a2g0o.cart.0.0.634a38dauKfUZA&mp=1&pdp_npi=6%40dis%21USD%21USD%204.06%21USD%202.55%21%21USD%202.55%21%21%21%400b15834017952653556894690e0f6b%2112000061602641587%21ct%21GB%218513385029%21%211%210%21
+5v buck converters, drop 8.4v to 5v, 2.42, https://www.aliexpress.com/item/1005008257960729.html?spm=a2g0o.cart.0.0.634a38dauKfUZA&mp=1&pdp_npi=6%40dis%21USD%21USD%202.88%21USD%202.42%21%21USD%202.42%21%21%21%400b15834017952655057228602e0f6b%2112000044394285593%21ct%21GB%218513385029%21%211%210%21
+tmc2209, stepper drivers, 8.73, https://www.aliexpress.com/item/4000443625883.html?spm=a2g0o.cart.0.0.634a38dauKfUZA&mp=1&pdp_npi=6%40dis%21USD%21USD%203.83%21USD%202.91%21%21USD%202.91%21%21%21%400b15834017952655057228602e0f6b%2110000015708809982%21ct%21GB%218513385029%21%213%210%21
+bme280, temp sensors, 3.66, https://www.aliexpress.com/item/1005008511564094.html?spm=a2g0o.cart.0.0.634a38dauKfUZA&mp=1&pdp_npi=6%40dis%21USD%21USD%203.66%21USD%203.66%21%21USD%203.66%21%21%21%400b15834017952655057228602e0f6b%2112000045490825871%21ct%21GB%218513385029%21%211%210%21
+switches, turning thinfgs on and off, 1.33, https://www.aliexpress.com/item/1005008330569768.html?spm=a2g0o.cart.0.0.634a38dauKfUZA&mp=1&pdp_npi=6%40dis%21USD%21USD%201.39%21USD%201.33%21%21USD%201.33%21%21%21%400b15834017952655097758678e0f6b%2112000044633870595%21ct%21GB%218513385029%21%211%210%21&pdp_ext_f=%7B%22cart2PdpParams%22%3A%7B%22pdpBusinessMode%22%3A%22retail%22%7D%7D
+kapton tape, insulating stuff, 2.60, https://www.aliexpress.com/item/1005007518587827.html?spm=a2g0o.cart.0.0.634a38dauKfUZA&mp=1&pdp_npi=6%40dis%21USD%21USD%202.66%21USD%202.60%21%21USD%202.60%21%21%21%400b15834017952655097758678e0f6b%2112000041103956431%21ct%21GB%218513385029%21%211%210%21
+soldering braid, unsoldering stuff, 0.80, https://www.aliexpress.com/item/1005005398523384.html?spm=a2g0o.cart.0.0.634a38dauKfUZA&mp=1&pdp_npi=6%40dis%21USD%21USD%202.24%21USD%200.80%21%21USD%200.80%21%21%21%400b15834017952655097758678e0f6b%2112000032915095979%21ct%21GB%218513385029%21%211%210%21
+capacitor set, mini fast battery, 7.01, https://www.aliexpress.com/item/1005005626707702.html?spm=a2g0o.cart.0.0.634a38dauKfUZA&mp=1&pdp_npi=6%40dis%21USD%21USD%207.12%21USD%207.01%21%21USD%207.01%21%21%21%400b15834017952655097758678e0f6b%2112000033796706984%21ct%21GB%218513385029%21%211%210%21
+resistor set, just resistors, 5.47, https://www.aliexpress.com/item/1005011772534173.html?spm=a2g0o.cart.0.0.634a38dauKfUZA&mp=1&pdp_npi=6%40dis%21USD%21USD%206.27%21USD%205.47%21%21USD%205.47%21%21%21%400b15834017952655097758678e0f6b%2112000056500803490%21ct%21GB%218513385029%21%211%210%21
+jst conector set, for connecting things nicely, 2.93, https://www.aliexpress.com/item/1005006498660940.html?spm=a2g0o.cart.0.0.634a38dauKfUZA&mp=1&pdp_npi=6%40dis%21USD%21USD%203.12%21USD%202.93%21%21USD%202.93%21%21%21%400b15834017952655097758678e0f6b%2112000037425305641%21ct%21GB%218513385029%21%211%210%21&pdp_ext_f=%7B%22cart2PdpParams%22%3A%7B%22pdpBusinessMode%22%3A%22retail%22%7D%7D
+discount3, $4 off orders $21+, -4,
+,,,
+order3, only jlcpcb order,,
+pcb, jst the pcb board, 4, https://jlcpcb.com
+shipping, done seperately for this, 6.20, https://jlcpcb/com
+discount4, $10 off - only does $7.9 off though, -7.90,
