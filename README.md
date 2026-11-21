@@ -59,7 +59,7 @@ Also means that for others buying thes parts, they will most likely be more expe
 |---|---|
 | Aliexpress Order 1 | $53.96 |
 | Aliexpress Order 2 | $40.47 |
-| JLCPCB | $2.30 |
-| **Total** | **$96.73** |
+| JLCPCB | $1.80 |
+| **Total** | **$96.25** |
 | | |
 |`(Not included in grant money)` Batteries | ~$35|
