@@ -46,11 +46,11 @@ Actually surprisingly cheap, due to AliExpress being clutch.
 
 Has gone through several iterations due to pricings and discounts.
 
-[HalfLife Grant BOM](old/BOM.csv)
+[HalfLife Grant BOM](old/BOM_grant.csv)
 
 [Full pricing for 1 curtain opener with no discounts - just adds batteries](old/BOM_full.csv)
 
-[New Latest BOM with discounts (makes 2 curtain openers within the budget) No batteries](NEW_BOM.csv)
+[New Latest BOM with discounts (makes 2 curtain openers within the budget) No batteries](BOM.csv)
 
 `Aliexpress can be made much cheaper through splitting an order and using multiple discounts (as long as its for Choice items which have shipping included).`
 Also means that for others buying thes parts, they will most likely be more expensive, depending on how much time you are willing to put in to find deals.
